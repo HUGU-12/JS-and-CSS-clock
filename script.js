@@ -22,9 +22,9 @@ function updateTime(){
   const secondRotation = 6 * second
   
   //we associate this rotation calculation to actual html elements which are our clock's hands
-  document.querySelector('.second-hand').style.transform = `rotate(${secondRotation}deg)`;
-  document.querySelector('.minute-hand').style.transform = `rotate(${minuteRotation}deg)`;
-  document.querySelector('.hour-hand').style.transform = `rotate(${hourRotation}deg)`;
+  document.querySelector('.second').style.transform = `rotate(${secondRotation}deg)`;
+  document.querySelector('.minute').style.transform = `rotate(${minuteRotation}deg)`;
+  document.querySelector('.hour').style.transform = `rotate(${hourRotation}deg)`;
 }
 setInterval(updateTime,1000);
 
